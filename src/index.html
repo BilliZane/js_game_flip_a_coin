@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/main.scss">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <script src="./script/script.js" defer></script>
+  <title>Flip a coin game</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="coin" id="coin">
+      <div class="heads">
+        <img src="./img/heads.png" alt="heads of coin">
+      </div>
+      <div class="tails">
+        <img src="./img/tails.png" alt="tails of coin">
+      </div>
+    </div>
+
+    <div class="stats">
+      <p class="stats__count">Орёл: <span id="heads-count">0</span></p>
+      <p class="stats__count stats__count--tails">Решка: <span id="tails-count">0</span></p>
+    </div>
+
+    <div class="buttons">
+      <button id="flip-button">Бросить монетку</button>
+      <button id="reset-button">Сброс</button>
+    </div>
+  </div>
+</body>
+
+</html>

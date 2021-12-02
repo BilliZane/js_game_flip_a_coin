@@ -114,10 +114,13 @@ button {
   background: #4a9b93;
   color: white;
 }
+#reset-button:disabled {
+  background: #b8b8b8;
+}
 #reset-button:hover {
   background: #d9564a;
 }
-#reset-button:focus {
+#reset-button:hover {
   background: #d9564a;
 }
 

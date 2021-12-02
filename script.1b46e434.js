@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script/script.js":[function(require,module,exports) {
 var coin = document.querySelector('.coin');
 var flipBtn = document.querySelector('#flip-button');
-var reseBtn = document.querySelector('#reset-button');
+var resetBtn = document.querySelector('#reset-button');
 var heads = 0;
 var tails = 0;
 flipBtn.addEventListener('click', function () {
@@ -171,13 +171,15 @@ function updateStats() {
 
 function disableButton() {
   flipBtn.disabled = true;
+  resetBtn.disabled = true;
   setTimeout(function () {
     flipBtn.disabled = false;
+    resetBtn.disabled = false;
   }, 3000);
 }
 
 ;
-reseBtn.addEventListener('click', function () {
+resetBtn.addEventListener('click', function () {
   coin.style.animation = 'none';
   heads = 0;
   tails = 0;
@@ -211,7 +213,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63432" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

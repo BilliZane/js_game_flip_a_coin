@@ -123,10 +123,13 @@ button {
 #reset-button {
   background: #4a9b93;
   color: white;
+  &:disabled {
+    background: #b8b8b8;
+  }
   &:hover {
     background: #d9564a;
   }
-  &:focus {
+  &:hover {
     background: #d9564a;
   }
 }

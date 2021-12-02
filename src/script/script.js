@@ -1,6 +1,6 @@
 const coin = document.querySelector('.coin');
 const flipBtn = document.querySelector('#flip-button');
-const reseBtn = document.querySelector('#reset-button');
+const resetBtn = document.querySelector('#reset-button');
 
 let heads = 0;
 let tails = 0;
@@ -54,12 +54,14 @@ function updateStats() {
 
 function disableButton() {
   flipBtn.disabled = true;
+  resetBtn.disabled = true;
   setTimeout(function () {
     flipBtn.disabled = false;
+    resetBtn.disabled = false;
   }, 3000);
 };
 
-reseBtn.addEventListener('click', () => {
+resetBtn.addEventListener('click', () => {
   coin.style.animation = 'none';
   heads = 0;
   tails = 0;
